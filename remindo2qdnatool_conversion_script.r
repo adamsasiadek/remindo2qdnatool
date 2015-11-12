@@ -1,5 +1,9 @@
 # Remindo QDNA conversion script
 
+# First create Remindo_files folder in the working directory
+# First create QDNA_files folder in the working directory
+# Also add your candidates info to the working directory to replzce remindo ID with "code / kenmerk"
+
 # In Remindo export the raw results through an admin account in the "beheer omgeving"
 
 # Select the opleiding of interest.
