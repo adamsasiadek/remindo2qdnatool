@@ -21,8 +21,15 @@ if(!'readxl' %in% installed.packages()) { install.packages('readxl') }
 # Load readxl package
 library('readxl')
 
-# Set file name
-file_name = "replace_with_file_name.xlsx"
+# List all files in subdirectory and assign to files vector
+files <- list.files("Remindo_files")
+
+# Subset to only suffix xlsx
+files <- grep("\\.xlsx$", files, value = TRUE)
+
+# Set file name. In the above command a list of multiple files could be ready for processing.
+# You can now use for example files[1] to run the conversion for the first file name.
+file_name = files[replace_with_number_of_file_to_convert]
 
 # Read data
 results <- read_excel(paste("Remindo_files/", file_name, sep=''), col_names = T)
