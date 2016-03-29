@@ -16,8 +16,9 @@
 # Set working directory
 setwd("replace_with_your_working_directory")
 
-# Install some packages
+# Install the readxl package if it is not installed already
 if(!'readxl' %in% installed.packages()) { install.packages('readxl') }
+# Load readxl package
 library('readxl')
 
 # Set file name
